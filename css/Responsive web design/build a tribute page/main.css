@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;700 & display=swap');
+* {
+  padding:0;
+  margin:0;
+ box-sizing: border-box;
+}
+
+body {
+   line-height:1.6em;
+   font-family:"Poppins";
+   background-color:#fff;
+   min-width: 320px;
+   font-size: 0.81rem;;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 30px 0px;
+    line-height: 2rem;
+}
+
+h1 , p {
+  text-align:center;
+}
+p {
+  margin-bottom:20px;
+}
+#main {
+  margin: 35px 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+img {
+  max-width:100%;
+  height:auto;
+  border-radius:5px;
+}
+
+#tribute-info {
+  width:50%;
+  margin:auto;
+}
+h3 {
+  font-size: 15px !important;
+}
+@media(max-width:768px) {
+  #tribute-info {
+    width:100%;
+    padding: 15px 20px;
+  }
+}
+#headline {
+  margin: 3.5rem 0px;
+  text-align:center;
+}
+#img-div {
+  background: white;
+  padding: 40px;
+  margin: auto;
+  border-radius:10px;
+  box-shadow: 1px 1px 5px #ccc;
+  text-align:center;
+  width:30%;
+  max-width: 300px;
+}
+@media (max-width:768px){
+  #img-div {
+    /* background: white;
+    padding: 40px;
+    margin: auto;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px #ccc;
+    text-align:center; */
+    width:100%;
+  }
+}
+#img-captio {
+  margin-top:20px !important;
+}

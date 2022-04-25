@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;600;700& display=swap');
+
+:root {
+  --white: #fff;
+  --blue: #1fa1f2;
+  --dark: rgb(45,45,60);
+  --dark-second: rgb(35,35,45);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height:1.5em;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(45, 45, 60, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://www.online-psychology-degrees.org/wp-content/uploads/2019/11/shutterstock_450467644.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-size :2em;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button {
+    border: none;
+  }
+  
+  textarea {
+    min-height: 150px;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    border-radius:5px;
+    background-color:var(--dark-second,rgb(35,35,45));
+  }
+  
+  /* form */
+  form {
+    background: var(--dark, rgb(45,45,60));
+    padding: 40px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 520px) {
+    form {
+      padding: 20px;
+    }
+  }
+
+/*** components */
+.container {
+  width : 40%;
+  margin:2% auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    color: #efefef;
+  }
+  
+.text-center {
+    text-align: center;
+}
+  
+@media (max-width: 768px) {
+  h1 {
+    font-size :20px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+.header {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.input-group {
+  margin-bottom: 10px;
+  padding: 0.25rem;
+}
+
+.input,
+#submit{
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  height:50px;
+  color: var(--white, #fff);
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline:none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input {
+  background-color:var(--dark-second,rgb(35,35,45));
+}
+
+.input:focus, textarea:focus {
+  border: 2px solid var(--blue);
+}
+
+
+[type=checkbox], [type=radio] {
+  display: inline-block;
+  margin-right: 15px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+
+
+#submit {
+  background: var(--blue);
+  cursor: pointer;
+}
+

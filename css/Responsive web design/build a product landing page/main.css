@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;600;700 & display=swap');
+
+:root {
+   --white: #fff;
+  --blue: #1fa1f2;
+  --dark: rgb(45,45,60);
+  --dark-second: rgb(35,35,45);
+  --gray:#eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height:1.6em;
+}
+
+body {
+  background-color: var(--gray);
+  min-width: 320px;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+p, a, li {
+    font-size: 0.82rem;
+}
+
+input, 
+button {
+   padding: 8px 15px !important;
+   border-radius: 3px;
+   border:transparent;
+}
+
+/*** Components **/
+.a-center {
+    text-align: center !important;;
+}
+
+
+.btn-block {
+  display: block !important;
+  width:100%;
+}
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.b-blue { 
+  background-color:var(--blue) !important;
+}
+.b-blue-2 {
+  border:2px solid var(--blue) !important;
+}
+
+.card {
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius:5px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.icon i {
+    font-size: 25px;
+}
+.offer {
+  background-color: var(--gray);
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+}
+@media(max-width:768px){
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.row {
+    display: flex;
+}
+@media(max-width:768px){
+    .row {
+        flex-direction: column;
+    }
+}
+.t-white {
+  color:var(--white) !important;
+}
+.t-blue {
+  color:var(--blue) !important;
+}
+.w-70 {
+    width: 70%;
+}
+
+
+header {
+  width:100%;
+  position: fixed;
+  top: 0;
+  padding: 0px 20px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+header .container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+    header .container{
+        width:95% !important;
+    }
+}
+header .logo {
+  margin-top:10px;
+  min-width: 130px;
+  width: 130px;;
+  padding:10px;
+}
+header .logo img{
+  width:100%;
+}
+header nav ul{
+  display:flex;
+  justify-content:space-between;
+}
+header nav ul li{
+  margin:0 20px;
+}
+header nav ul li a{
+  text-transform:uppercase;
+}
+
+@media(max-width:450px){
+    header .logo {
+        min-width: 80px;
+        width: 100px;
+    }
+    header .logo img{
+        width: 100%;
+    }
+    header nav ul li{
+        margin:0 10px;
+    }
+    header nav ul li a{
+        font-size: 0.75em;
+    }
+}
+
+
+
+/** hero section ***/
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height:300px;
+  margin-top: 50px;
+  background-color:var(--dark);
+  color:var(--white, #fff);
+    background-image: linear-gradient(
+      115deg,
+      rgba(45, 45, 60, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://www.online-psychology-degrees.org/wp-content/uploads/2019/11/shutterstock_450467644.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-section .container{
+  width:45% !important;
+  margin:auto;
+}
+
+@media(max-width:520px){
+    .hero-section form  {
+       display: flex;
+       flex-direction: column;
+    }
+    .hero-section form  input{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section .container{
+        width:85% !important;
+        padding: 20px 0;
+    }
+}
+.hero-section  h1 {
+  margin-bottom: 20px;
+}
+.hero-section  p {
+  margin-bottom: 20px;
+}
+
+
+/** services section **/
+#services {
+  margin: 30px 0px;
+}
+#services .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+#services .service h4{
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  #services .icon i{
+    font-size: 25px !important;
+  }
+  #services .service {
+    margin: 8px;
+  }
+}
+
+
+/** project **/
+#project {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+#project iframe {
+  border-radius: 5px;;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #project iframe {
+      height: 40vh;
+      width: 100%;
+    }
+}
+
+
+/*** Pricing ***/
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#pricing .container {
+  width: 70%;
+}
+.product  h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+@media (max-width:1024px) and (min-width:768px){
+  #pricing .container {
+    width: 90%;
+  }
+}
+
+
+/** footer **/
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
